@@ -1,3 +1,5 @@
+import os
+os.environ['YOLO_CONFIG_DIR'] = '/tmp'
 import cv2
 import pandas as pd
 from ultralytics import YOLO
