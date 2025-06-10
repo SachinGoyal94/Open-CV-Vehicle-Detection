@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Result</title>
+</head>
+<body>
+    <h2>Detection Complete!</h2>
+    <video width="640" height="480" controls>
+        <source src="{{ video_file }}" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <br><br>
+    <a href="{{ url_for('download_file', filename='output_video.mp4') }}">📥 Download Video</a><br>
+    <a href="{{ url_for('download_file', filename='counts.csv') }}">📊 Download CSV</a>
+</body>
+</html>
